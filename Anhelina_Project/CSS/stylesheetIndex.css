@@ -1,0 +1,114 @@
+/* Site Stylesheet Index page
+  1. Page style
+  2. Mobile Version
+======================================== */
+/*1. Page style
+
+
+======================================== */
+
+
+/*section hero*/
+.hero {
+  background-image: url("../imagea/indeximage.jpg");
+  background-blend-mode: multiply;
+  background-size: cover;
+  height: 46rem;
+  padding: 1em;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.back {
+  position: relative;
+  align-items: flex-end;
+
+}
+
+.hero-text {
+  position: relative;
+  top: 100px;
+}
+
+h1 {
+  font-family: 'Special Elite', cursive;
+  font-size: 60px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  color:black;
+  background: #fff;
+  text-transform: uppercase;
+  outline-offset: 0.25em;
+  display: inline-block;
+  margin: 0.25em 0 0.5em;
+
+}
+
+/*button*/
+.btn-main {
+  position: relative;
+  background-color: white;
+  color: #EE7084;
+  border: 1px solid #EE7084;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1.3px;
+  padding: 16px 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+  top: 100px;
+  border-radius: 2px;
+  cursor: pointer;
+
+}
+
+.btn-main:hover {
+  background-color: black;
+  transition: color .1s ease-in, background-color .1s ease-in;
+  text-decoration: none;
+}
+
+.btn-main:active {
+  font-size: 18px;
+  transition: font-size .1s ease-in-out;
+
+}
+
+
+/*2. Mobile Version
+======================================== */
+
+
+@media only screen and (max-width: 600px) {
+  .hero{
+    height: 20rem;
+  }
+
+  .hero-text {
+    top: 10px;
+  }
+
+  .btn-main {
+    top: 20px;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+
+
+  }
+
+  .btn-main {
+    padding: 5px 10px;
+    font-size: 0.8rem;
+  }
+
+
+}

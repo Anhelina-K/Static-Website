@@ -1,0 +1,208 @@
+/* Site Stylesheet Global Web-Site stiles
+  1. Global Styles
+  2. Typography Styles
+  3. Structure Styles
+  4. Module Styles
+  5. Global Mobile Version
+======================================== */
+
+/* 1. Global Styles
+======================================== */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+}
+
+
+html {
+    margin: 0 auto;
+    width: 100%;
+    overflow-x: hidden;
+}
+/*box-sizing property controls the type of box model the browser should use when interpreting a web */
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+
+
+/*sizing elements*/
+
+/*headings*/
+
+/* 2. Typography Styles
+======================================== */
+
+q {
+  font-family: 'Indie Flower', cursive;
+}
+
+span {
+  color: #E8707B;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(210, 100%, 50%);
+}
+
+a:hover {
+  text-decoration: underline;
+
+}
+h1,
+h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+/*4. Module Styles
+========================================*/
+
+/*Navigation*/
+
+nav {
+  display: flex;
+  background-color: #ffffff;
+  flex-direction: row;
+  padding: 10px;
+  justify-content: space-around;
+  height: auto;
+  align-items: center;
+  border: 6px transparent;
+  width: 100%;
+  position: fixed;
+
+
+}
+
+
+nav a {
+  color: #466995;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  letter-spacing: 2px;
+  padding: 10px 30px;
+  text-transform: lowercase;
+}
+
+
+
+.nav-link a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+nav a.nav-link:hover:not(.active) {
+  color: hsl(210, 100%, 50%);
+  text-decoration: none;
+
+}
+
+
+nav a.active {
+  color: black;
+  font-family: 'Amatic SC', sans-serif;
+  text-transform: uppercase;
+  font-size: 2em;
+  padding: 0px 60px;
+  text-decoration: none;
+}
+
+.logo {
+  width: 8%;
+}
+
+/*button back*/
+
+
+
+
+/* Site Footer */
+footer {
+  display: block;
+  padding: 1rem 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.85rem;
+  color: white;
+  background: black;
+  text-align: center;
+  margin: 0 auto;
+
+
+}
+
+
+footer * img {
+  width: 40px;
+  height: auto
+}
+
+footer .back {
+  border: 1px solid hsl(210, 100%, 50%);
+  display: inline-block;
+  padding: 10px 25px;
+  color: hsl(210, 100%, 50%);
+  font-size: 18px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2%;
+  
+
+}
+.back:hover {
+  text-decoration: none;
+  border:1px solid white;
+  color:white;
+
+}
+
+/*5. Global Mobile Version
+======================================== */
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  header {
+    position: static;
+  }
+
+  nav {
+    flex-direction: column;
+    padding: 10px;
+    position: static;
+  }
+
+  nav a {
+
+    font-size: 1em;
+
+  }
+
+  a.active {
+    font-size: 1.5em;
+
+  }
+
+  .logo {
+    display: none;
+  }
+
+
+  footer * img {
+    display: none;
+  }
+
+}

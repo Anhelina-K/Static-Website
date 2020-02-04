@@ -1,0 +1,233 @@
+/* Site Stylesheet Page About 
+  1. Typography Styles
+  2. Header
+  2. Main content
+  3. Mobile Version
+
+======================================== */
+
+/* 1. Typography Styles
+======================================== */
+h2 {
+  font-size: 18px;
+  text-align: center;
+}
+
+aside p,
+ul {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+section p {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/*2. Header
+======================================== */
+/*hero-part*/
+
+
+.hero {
+  background-color: #444;
+  background-image: url("../imagea/hero.jpg");
+  background-size: cover;
+  background-blend-mode: multiply;
+  height: 46rem;
+  padding: 1em;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hero-text h1 {
+  font-size: 3rem;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  outline-offset: 0.25em;
+  display: inline-block;
+  margin: 0.25em 0 0.5em;
+  padding: 20px 20px;
+  border-bottom: 3px solid white;
+
+
+
+
+}
+
+span,
+strong {
+  color: #FA758C;
+}
+
+
+/*2. Main content
+
+
+======================================== */
+
+
+/*aside navigation
+W3School resoursed was used, but modified and adjusted*/
+#mySidenav a {
+  position: fixed;
+  left: -90px;
+  transition: 0.3s;
+  padding: 10px;
+  width: 100px;
+
+
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#twiter {
+  top: 101px;
+  background-color: #38A1F3;
+
+}
+
+#facebook {
+  top: 160px;
+  background-color: #2f55a4;
+}
+
+#linkedin {
+  top: 220px;
+  background-color: #0077B5;
+}
+
+#mySidenav img {
+  width: 50%;
+}
+
+/* Column container */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Small column */
+.side {
+  flex: 30%;
+  background-color: hsl(339, 29%, 91%);
+  padding: 20px;
+}
+.side p, h2, ul {
+  font-family: 'Crimson Text', serif;
+}
+.avatar img {
+  width: 40%;
+  height: auto;
+  border-radius: 50%;
+  margin-top: 10%;
+  margin-left: 30%;
+
+
+}
+
+ul {
+  list-style: none;
+}
+
+/*arrow*/
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
+
+
+
+
+/* Main big column */
+
+
+section {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+
+/* Boxes */
+.boxes {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+  /*In this example I am creating a grid that contains as many 200 pixel 
+  column tracks as will fit into the container with the remaining space 
+  shared equally between the columns. In the minmax() function the first 
+  value is the minimum size I want my tracks to be, the second is the maximum. 
+  By using 1fr as the maximum value the space is equally distributed.*/
+}
+
+.box {
+  background: white;
+  text-align: center;
+  padding: 1.5rem 2rem;
+
+}
+
+.box img {
+  width: 50%;
+  height: auto;
+}
+
+footer {
+  width: 100%
+}
+
+
+
+/*3. Mobile Version
+
+======================================== */
+
+
+@media only screen and (max-width: 660px) {
+  .hero-text h1 {
+    display: block;
+    font-size: 1.75em;
+  }
+
+  .hero{
+    height: 20rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+
+  }
+
+
+  #mySidenav a {
+
+    width: 50px;
+    left: -45px;
+
+
+  }
+
+  .avatar img {
+    margin-left: 30%;
+
+
+  }
+
+  article {
+    flex-direction: column;
+  }
+}

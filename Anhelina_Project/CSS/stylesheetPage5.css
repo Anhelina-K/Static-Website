@@ -1,0 +1,339 @@
+/* Site Stylesheet Page5  Jobs
+  1. Global Styles
+  2. Header
+  3. Main content Grid
+  4.Mobile version
+
+======================================== */
+
+
+/*1. Global Styles
+
+======================================== */
+body {
+  width: 100%;
+  background-image: url("../imagea/space.png");
+  background-position: center;
+  background-repeat: repeat;
+  background-color: lightsteelblue;
+  font-family: "Space Mono", sans-serif;
+
+}
+
+html {
+  width: 100%;
+}
+
+
+/*2.Header
+
+======================================== */
+
+.banner-grid {
+  display: grid;
+  color: white;
+  padding-top: 5em;
+  padding-bottom: 3em;
+  text-align: center;
+  font-size: 2em;
+}
+
+.banner-grid h2 {
+  color: white;
+  padding: 0.55em 1.25em;
+  letter-spacing: 0.5rem;
+
+}
+
+.picture {
+  width: 10%;
+  height: auto;
+  margin: 0 auto;
+
+}
+
+q {
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: 'Indie Flower', cursive;
+
+}
+
+/*3. Main content Grid
+
+======================================== */
+/* Grid*/
+.container {
+  display: grid;
+  grid-template:repeat(3, 1fr) / repeat(3, 1fr);
+  /*shorthand for grid-tempate-row and grid-template-column.By using the 
+  fr unit, we can define the 
+  size of columns and rows as a fraction of the grid’s length and width. 
+  This unit was specifically created for use in CSS Grid. 
+  Using fr makes it easier to prevent grid items from 
+  overflowing the boundaries of the grid.*/
+  grid-gap: 20px;
+  height: 500px;
+  margin: 0 auto;
+  grid-auto-rows: 500px;
+  justify-items: center;
+  justify-content: center;
+  align-items:start;
+  width: 90%;
+
+
+}
+
+h3 {
+  text-align: center;
+}
+
+.text {
+  text-align: center;
+  margin-bottom: 1rem;
+
+}
+
+.container * img {
+  width: 35%;
+  height: auto;
+  padding: 15px;
+
+
+}
+
+/*grid-boxes*/
+.box1 {
+
+  background-color: #F0FFFF;
+  padding: 20px;
+
+}
+
+.box2 {
+
+  background-color: #F0FFFF;
+  padding: 20px;
+
+}
+
+.box3 {
+
+  background-color: #F0FFFF;
+  padding: 20px;
+
+
+}
+
+.box4 {
+
+  background-color: #F0FFFF;
+  padding: 20px;
+
+}
+
+.box5 {
+
+  background-color: #F0FFFF;
+  padding: 20px;
+
+}
+
+.box6 {
+
+  background-color: #F0FFFF;
+  padding: 20px;
+
+}
+
+.box7 {
+
+  background-color: #F0FFFF;
+  padding: 20px;
+
+}
+
+.box8 {
+
+  background-color: #F0FFFF;
+  padding: 20px;
+
+}
+
+.box9 {
+
+  background-color: #F0FFFF;
+  padding: 20px;
+
+}
+
+/* Buttons*/
+a {
+
+  margin: 0 auto;
+
+
+}
+
+.button {
+  display: block;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  width: 40%;
+  height: auto;
+  font-size: 12px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  text-decoration: none;
+
+
+
+
+}
+
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #008CBA;
+  margin-top: 5rem;
+
+
+}
+
+.button1:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+.button2 {
+  background-color: white;
+  color: black;
+  border: 2px solid rgb(58, 33, 58);
+}
+
+.button2:hover {
+  background-color: rgb(58, 33, 58);
+  color: white;
+}
+
+.button3 {
+  background-color: white;
+  color: black;
+  border: 2px solid rgb(0, 60, 128);
+  margin-top: 2.5rem;
+}
+
+.button3:hover {
+  background-color: rgb(0, 60, 128);
+  color: white;
+}
+
+.button4 {
+  background-color: white;
+  color: black;
+  border: 2px solid rgb(52, 110, 52);
+  margin-top: 1.5rem;
+}
+
+.button4:hover {
+  background-color: rgb(52, 110, 52);
+  color: white;
+}
+
+.button5 {
+  background-color: white;
+  color: black;
+  border: 2px solid rgb(231, 173, 231);
+  margin-top: 2.9rem;
+}
+
+.button5:hover {
+  background-color: rgb(231, 173, 231);
+  color: white;
+
+}
+
+.button6 {
+  background-color: white;
+  color: black;
+  border: 2px solid rgb(218, 101, 5);
+  margin-top: 2.5rem;
+}
+
+.button6:hover {
+  background-color: rgb(218, 101, 5);
+  color: white;
+}
+
+.button7 {
+  background-color: white;
+  color: black;
+  border: 2px solid rgb(121, 3, 115);
+  margin-top: 5.5rem;
+}
+
+.button7:hover {
+  background-color: rgb(121, 3, 115);
+  color: white;
+}
+
+.button8 {
+  background-color: white;
+  color: black;
+  border: 2px solid hsl(141, 82%, 30%);
+  margin-top: 2.2rem;
+}
+
+.button8:hover {
+  background-color: hsl(141, 82%, 30%);
+  color: white;
+}
+
+.button9 {
+  background-color: white;
+  color: black;
+  border: 2px solid hsl(209, 83%, 30%);
+}
+
+.button9:hover {
+  background-color: hsl(209, 83%, 30%);
+  color: white;
+}
+
+/*footer*/
+footer {
+  margin-top: 60rem;
+  width: 100%;
+
+}
+
+/*4. Mobile version
+======================================== */
+
+
+@media only screen and (max-width: 660px) {
+
+
+  .banner-grid h2 {
+    font-size: 2rem;
+  }
+
+  q {
+    font-size: 1rem;
+  }
+
+  .container {
+    display: grid;
+    grid-template: 1fr/1fr;
+
+  }
+
+  footer {
+    margin-top: 170rem;
+    width: 100%;
+
+  }
+
+}

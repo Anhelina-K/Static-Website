@@ -1,0 +1,160 @@
+/* Site Stylesheet JS links Page 3
+  1. Global Styles
+  2. Page style
+  3. Mobile Version Style
+
+======================================== */
+/*1. Global Styles
+
+======================================== */
+
+body {
+
+  text-align: justify;
+  background-image: url("../imagea/mountaine.jpg");
+  background-size: cover;
+
+
+
+}
+
+/* Page style
+
+======================================== */
+
+
+/*header*/
+.hero {
+  background-color: #444;
+  background-image: url("../imagea/hero.jpg");
+  background-size: cover;
+  background-blend-mode: multiply;
+  height: 46rem;
+  padding: 1em;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.text {
+  font-size: 3rem;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  outline-offset: 0.25em;
+  display: inline-block;
+  margin: 0.25em 0 0.5em;
+  padding: 20px 20px;
+  border-bottom: 3px solid white;
+}
+
+
+
+
+q {
+  font-size: 2rem;
+  text-align: center;
+}
+
+
+
+/* Table */
+
+table {
+  height: 100%;
+  left: 10%;
+  margin: 20px auto;
+  overflow-y: hidden;
+  overflow-x: auto;
+  position: static;
+  /* by default*/
+  width: 80%;
+  font-size: 18px;
+
+
+}
+
+table tr:nth-child(even) {
+  background-color: #B0E0E6;
+}
+
+table tr:hover {
+  background-color: white;
+}
+
+thead th {
+  background: #EE7084;
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #F0FFFF;
+}
+
+p {
+  letter-spacing: 3px;
+  text-align: center;
+
+
+
+}
+
+tr {
+  background: #F0FFFF;
+  border-bottom: 1px solid #FFF;
+  margin-bottom: 5px;
+
+}
+
+td {
+
+  line-height: 1.6;
+  padding: 20px;
+  text-align: justify;
+  width: 33%;
+}
+
+/*  3. Mobile Version Style
+
+
+======================================== */
+@media only screen and (max-width: 660px) {
+  .text {
+    display: block;
+    font-size: 1.57em;
+  }
+
+  .hero{
+    height: 20rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+
+  }
+
+
+  q {
+    font-size: 1rem;
+  }
+
+  .text {
+    padding: 0.25em 0.75em;
+  }
+
+  table {
+    font-size: 12px;
+    width: 100%;
+
+
+  }
+
+  thead th {
+
+    font-size: 0.5rem;
+
+  }
+}

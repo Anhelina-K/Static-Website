@@ -1,0 +1,130 @@
+/* Site Stylesheet Next Steps (Page 6)
+1.Header
+2. First section
+3. Second section
+4. Mobile version
+======================================== */
+
+
+/* 
+  1. Header
+======================================== */
+
+/*section hero*/
+
+
+
+h1 {
+  font-size: 5rem;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  outline-offset: 0.25em;
+  display: inline-block;
+  margin: 0.25em 0 0.5em;
+  padding: 20px 20px;
+  border-bottom: 3px solid white;
+
+
+
+
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5em;
+}
+
+
+
+.hero {
+  background-color: #444;
+  background-image: url("../imagea/people-2591874_1280.jpg");
+  background-blend-mode: multiply;
+  background-size: cover;
+  height: 46rem;
+  padding: 1em;
+  color:white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center
+
+
+}
+
+/* 
+  2. Main content
+======================================== */
+
+/*flex*/
+
+.steps {
+  padding: 12vh 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+
+}
+
+.step {
+  flex: 0 1 30%;
+}
+
+/* 
+  3. Second part
+======================================== */
+
+/*flex 2*/
+.cta {
+  background-image: url("../imagea/evening-55067_1280.png");
+  background-size: cover;
+  padding: 10vh 0;
+  color: black;
+  display: flex;
+  justify-content: flex-end;
+  text-align: justify;
+}
+
+
+.cta-text {
+  flex-basis: 50%;
+  padding: 2em;
+
+
+}
+
+/* 
+  4. Mobile version
+======================================== */
+
+@media only screen and (max-width: 660px) {
+  .hero {
+    height: 20rem;
+  }
+
+  h1 {
+    font-size: 1.57rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+
+  }
+
+  .steps {
+    flex-direction: column;
+ 
+  }
+
+  .cta-text {
+    flex-basis: 100%;
+    justify-content: center;
+    color:white;
+  }
+
+
+}

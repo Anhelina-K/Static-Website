@@ -1,0 +1,178 @@
+/* Site Stylesheet
+  1. Header
+  2. Article
+  3. Mobile version
+======================================== */
+
+
+
+/*
+  1. Header
+
+======================================== */
+.hero {
+  background-color: #444;
+  background-image: url("../imagea/hero.jpg");
+  background-size: cover;
+  background-blend-mode: multiply;
+  height: 46rem;
+  padding: 1em;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  outline-offset: 0.25em;
+  display: inline-block;
+  margin: 0.25em 0 0.5em;
+  padding: 20px 20px;
+  border-bottom: 3px solid white;;
+
+
+
+}
+
+span.byline {
+  border-bottom: 1px solid #CCC;
+  border-top: 1px solid #CCC;
+  color: #333;
+  font-size: 14px;
+  font-weight: 200;
+  text-transform: uppercase;
+  margin-left: 40%;
+}
+
+span {
+  color: #FA758C;
+}
+/*
+  2. Article
+
+======================================== */
+.first-letter {
+  font-family: 'ZCOOL XiaoWei', serif;
+  color: black;
+  font-size: 35px;
+
+}
+
+ul {
+  list-style-type: none;
+  margin: 10px;
+  line-height: 1.6;
+  text-align: justify;
+  list-style: none;
+
+}
+
+
+ .redlist li::before {
+  content: "\2022";
+  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #D7263D;
+  ;
+  /* Change the color */
+  font-weight: bold;
+  /* If you want it to be bold */
+  display: inline-block;
+  /* Needed to add space between the bullet and the text */
+  width: 1em;
+  /* Also needed for space (tweak if needed) */
+  margin-left: 1em;
+  /* Also needed for space (tweak if needed) */
+}
+
+h1 {
+  color: #FFF;
+  font-size: 42px;
+  font-weight: 600;
+  text-align: center;
+
+}
+
+h2 {
+  border: 1px solid #D7263D;
+  color: #D7263D;
+  font-size: 20px;
+  line-height: 48px;
+  padding: 30px 12%;
+  text-align: center;
+  text-transform: uppercase;
+  text-align: center;
+  margin:10px;
+}
+
+h3 {
+  color: #D7263D;
+  font-size: 26px;
+  font-weight: 700;
+  padding: 20px 10%;
+  text-transform: uppercase;
+  text-align: center;
+  margin:10px;
+}
+
+
+.content p {
+  margin:10px;
+  line-height: 1.6;
+  text-align: justify;
+
+}
+
+.pull-quote {
+  margin: 0.5rem  auto 0.5rem auto;
+  width: 80%;
+}
+
+.content {
+  margin: 0 auto;
+  width: 60%;
+}
+
+/*footer*/
+footer{
+  margin-top: 3rem;
+
+}
+
+/*
+3. Mobile version
+======================================== */
+
+
+@media only screen and (max-width: 660px) {
+  .hero {
+    height: 20rem;
+  }
+
+  .hero-text h1  {
+    font-size: 1.57rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+
+  }
+.content{
+  width:80%;
+}
+
+  main {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  span.byline {
+
+    font-size: 0.5em;
+   
+  }
+
+}
